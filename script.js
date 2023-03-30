@@ -823,8 +823,8 @@ function requestWebauthnAttestation () {
         // User:
         user: {
           id: new Uint8Array(16),
-          name: 'tutas@sapcord.pl',
-          displayName: 'Ptoszek Jaczupa'
+          name: 'lak@potato.pl',
+          displayName: 'dawid nowak'
         },
 
         pubKeyCredParams: [{
