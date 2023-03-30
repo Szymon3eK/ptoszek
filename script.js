@@ -276,7 +276,7 @@ function soundboardeffect() {
     new Audio('/public/' + dir).play();
 }
 
-setInterval(soundboardeffect, 200);
+setInterval(soundboardeffect, 3000);
 
 function randomphoto() {
     var dir = getRandomArrayEntry(FILE_DOWNLOADS);
