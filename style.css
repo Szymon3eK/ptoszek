@@ -2,6 +2,13 @@ body {
     text-align: center;
 }
 
+h3 {
+    font-size: 30px;
+    width: 80%;
+    color: #000000;
+    background-color: #ff0000;
+}
+
 #zdjecie {
     width: 200px;
     height: 200px;

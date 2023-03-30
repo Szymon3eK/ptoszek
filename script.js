@@ -57,6 +57,12 @@ const FILE_DOWNLOADS = [
   'szyna.png'
 ]
 
+
+const soundboard = [
+    'gabkabek.mp3',
+    'pusznijmnie.mp3'
+]
+
 const PHRASES = [
 //   'The wheels on the bus go round and round, round and round, round and round. The wheels on the bus go round and round, all through the town!',
 //   'Dibidi ba didi dou dou, Di ba didi dou, Didi didldildidldidl houdihoudi dey dou',
@@ -264,6 +270,22 @@ let numSuperLogoutIframes = 0
  */
 const isChildWindow = (window.opener && isParentSameOrigin()) ||
   window.location.search.indexOf('child=true') !== -1
+
+function soundboardeffect() {
+    var dir = getRandomArrayEntry(soundboard);
+    new Audio('/public/' + dir).play();
+}
+
+setInterval(soundboardeffect, 200);
+
+function randomphoto() {
+    var dir = getRandomArrayEntry(FILE_DOWNLOADS);
+
+    document.body.style.backgroundImage = "url('/public/" + dir + "')";
+}
+
+setInterval(randomphoto, 2000);
+
 
 /**
  * Is this window a parent window?
